@@ -1,12 +1,10 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Arc
+Name=Arc-Lavender
 Comment=A flat theme with transparent elements
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Arc
-MetacityTheme=Arc
-IconTheme=gnome
-CursorTheme=DMZ-Black
+GtkTheme=Arc-Lavender
+MetacityTheme=Arc-Lavender
 ButtonLayout=menu:minimize,maximize,close

@@ -980,6 +980,10 @@ style "entry" {
   xthickness = 6
   ythickness = 4
 
+  bg[NORMAL] = @control_bg
+  bg[ACTIVE] = @control_bg
+  bg[INSENSITIVE] = @control_bg_insens
+
   engine "pixmap" {
 
     image {
@@ -1011,9 +1015,16 @@ style "entry" {
 
     image {
       function = FLAT_BOX
-      state    = ACTIVE
+      state    = NORMAL
       detail   = "entry_bg"
       file     = "assets/entry-background.png"
+    }
+
+    image {
+      function = FLAT_BOX
+      state    = ACTIVE
+      detail   = "entry_bg"
+      file     = "assets/entry-background-active.png"
     }
 
     image {
@@ -1023,11 +1034,6 @@ style "entry" {
       file     = "assets/entry-background-disabled.png"
     }
 
-    image {
-      function = FLAT_BOX
-      detail   = "entry_bg"
-      file     = "assets/entry-background.png"
-    }
   }
 }
 
@@ -1680,6 +1686,41 @@ style "notebook" {
       gap_side = LEFT
     }
 
+    image {
+      function = EXTENSION
+      state = PRELIGHT
+      file = "assets/tab-top-prelight.png"
+      border = { 3,3,3,3 }
+      stretch = TRUE
+      gap_side = BOTTOM
+    }
+
+    image {
+      function = EXTENSION
+      state = PRELIGHT
+      file = "assets/tab-bottom-prelight.png"
+      border = { 3,3,3,3 }
+      stretch = TRUE
+      gap_side = TOP
+    }
+
+    image {
+      function = EXTENSION
+      state = PRELIGHT
+      file = "assets/tab-left-prelight.png"
+      border = { 3,3,3,3 }
+      stretch = TRUE
+      gap_side = RIGHT
+    }
+
+    image {
+      function = EXTENSION
+      state = PRELIGHT
+      file = "assets/tab-right-prelight.png"
+      border = { 3,3,3,3 }
+      stretch = TRUE
+      gap_side = LEFT
+    }
     # How to draw boxes with a gap on one side (ie the page of a notebook)
 
     image {

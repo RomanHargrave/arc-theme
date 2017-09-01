@@ -43,6 +43,7 @@ menu-radio-unchecked
 menu-radio-unchecked-selected
 menu-radio-unchecked-insensitive
 entry-background
+entry-background-active
 entry-background-disabled
 entry-border-bg
 entry-border-active-bg
@@ -126,6 +127,10 @@ tab-bottom-active
 tab-top-active
 tab-left-active
 tab-right-active
+tab-bottom-prelight
+tab-top-prelight
+tab-left-prelight
+tab-right-prelight
 inline-toolbar
 toolbar
 menubar
